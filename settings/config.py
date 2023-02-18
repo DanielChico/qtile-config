@@ -1,0 +1,10 @@
+mod = "mod1"
+terminal = "gnome-terminal"
+browser = "google-chrome"
+code_editor = "code"
+chat = "telegram-desktop"
+filemanager = "nautilus"
+text_fontsize = 16
+group_fontsize = 13
+background_wallpaper = "/home/daniel_chico/.config/qtile/backgroud/04.jpg"
+bar_size = 35
