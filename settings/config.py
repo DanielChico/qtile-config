@@ -1,5 +1,5 @@
 mod = "mod1"
-terminal = "gnome-terminal"
+terminal = "alacritty"
 browser = "google-chrome"
 code_editor = "code"
 chat = "telegram-desktop"
