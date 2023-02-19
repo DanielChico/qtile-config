@@ -26,6 +26,8 @@ keys = [
     # Brightness keys doesnt work either
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+    Key([mod], "s", lazy.spawn("scrot")),  # Screenshot
+    Key([mod, "shift"], "s", lazy.spawn("scrot -s")),
     # Key([mod], "/",
     #     lazy.spawn("dtos-help"),
     #     desc='DTOS Help'
