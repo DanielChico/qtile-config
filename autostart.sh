@@ -7,6 +7,10 @@ picom &
 # conky -c $HOME/.config/conky/qtile/doom-one-01.conkyrc
 volumeicon &
 nm-applet &
+# Enable natural scrolling
+xinput set-prop "ELAN0709:00 04F3:31BF Touchpad" "libinput Natural Scrolling Enabled" 1 &
+#Enable tapping
+xinput set-prop "ELAN0709:00 04F3:31BF Touchpad" "libinput Tapping Enabled" 1
 
 ### UNCOMMENT ONLY ONE OF THE FOLLOWING THREE OPTIONS! ###
 # 1. Uncomment to restore last saved wallpaper
