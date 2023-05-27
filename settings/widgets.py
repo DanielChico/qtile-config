@@ -84,7 +84,12 @@ widgets_list = [
         padding=0,
         fontsize=group_fontsize,
     ),
-    widget.Systray(background=colors["background"], padding=5, fontsize=text_fontsize),
+    widget.Systray(
+        background=colors["background"],
+        padding=5,
+        icon_size=20,
+        fontsize=text_fontsize,
+    ),
     separator(),
     widget.Net(
         #    interface = "enp6s0",
@@ -104,7 +109,7 @@ widgets_list = [
         fontsize=text_fontsize,
     ),
     separator(),
-    widget.Volume(
+    widget.PulseVolume(
         foreground=colors["purple"],
         background=colors["background"],
         fmt="Vol: {}",

@@ -1,4 +1,4 @@
-mod = "mod1"
+mod = "mod4"
 terminal = "alacritty"
 browser = "google-chrome"
 code_editor = "code"
