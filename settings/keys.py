@@ -58,18 +58,6 @@ keys = [
         "XF86AudioRaiseVolume",
         lazy.spawn("pactl -- set-sink-volume @DEFAULT_SINK@ +5%"),
     ),
-    # Screen brightness controls with xbacklight idk why tf not working
-    Key(
-        [],
-        "XF86MonBrightnessUp",
-        lazy.spawn("xbacklight -inc 10"),
-    ),
-    Key(
-        [],
-        "XF86MonBrightnessDown",
-        lazy.spawn("xbacklight -dec 10"),
-    ),
-    # Brightness keys doesnt work either
     Key(
         [],
         "XF86MonBrightnessUp",
