@@ -43,26 +43,32 @@ keys = [
         lazy.spawn(filemanager),
         desc="filemanager",
     ),
-    # Media keys:
-    # Sound with amixer
-    # (Dont uncoment, idk how this works)  Key([], "XF86AudioMute", lazy.spawn("amixer sset Master toggle")),
+    Key(
+        [],
+        "XF86AudioMute",
+        lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"),
+    ),
     Key(
         [],
         "XF86AudioLowerVolume",
-        lazy.spawn("amixer sset Master 5%-"),
+        lazy.spawn("pactl -- set-sink-volume @DEFAULT_SINK@ -5%"),
     ),
     Key(
         [],
         "XF86AudioRaiseVolume",
-        lazy.spawn("amixer sset Master 5%+"),
+        lazy.spawn("pactl -- set-sink-volume @DEFAULT_SINK@ +5%"),
     ),
     # Screen brightness controls with xbacklight idk why tf not working
-    # Key([], "XF86MonBrightnessUp",
-    #     lazy.spawn("xbacklight -inc 10")
-    #     ),
-    # Key([], "XF86MonBrightnessDown",
-    #     lazy.spawn("xbacklight -dec 10")
-    #     ),
+    Key(
+        [],
+        "XF86MonBrightnessUp",
+        lazy.spawn("xbacklight -inc 10"),
+    ),
+    Key(
+        [],
+        "XF86MonBrightnessDown",
+        lazy.spawn("xbacklight -dec 10"),
+    ),
     # Brightness keys doesnt work either
     Key(
         [],
@@ -162,7 +168,7 @@ keys = [
     Key(
         [mod],
         "n",
-        lazy.layout.normalize(),
+        lazy.layout.reset(),
         desc="normalize window size ratios",
     ),
     Key(
