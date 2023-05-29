@@ -1,10 +1,12 @@
 from libqtile import layout
 from libqtile.config import Match
 
+from settings.colors import colors
+
 layout_theme = {
     "border_width": 2,
     "margin": 8,
-    "border_focus": "e1acff",
+    "border_focus": colors["light_blue"],
     "border_normal": "1D2330",
 }
 
