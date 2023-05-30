@@ -72,14 +72,15 @@ keys = [
         [mod],
         "s",
         lazy.spawn(
-            "scrot Pictures/Screenshots/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
-        ),
+            "scrot Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png -e 'xclip -selection clipboard -t image/png -i $f'"
+),
+# Pictures/Screenshots/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png
     ),  # Screenshot
     Key(
         [mod, "shift"],
         "s",
         lazy.spawn(
-            "scrot -s Pictures/Screenshots/Screenshot\ from\ %Y-%m-%d\ %H-%M-%S.png"
+            "scrot -s Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png -e 'xclip -selection clipboard -t image/png -i $f'"
         ),
     ),
     Key(
